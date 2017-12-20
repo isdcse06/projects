@@ -1,0 +1,53 @@
+<form class="">
+    <div class="col-md-6">
+        <div class="col-md-12 reportBox">
+            <div class="form-group">
+                <label for="name">Name or Report</label>
+                <input type="text" class="form-control errorBdr" id="name" placeholder="Enter Report Name">
+                <div class="showError">
+                    error occur
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="reportType">Report Type</label>
+                <select type="text" class="form-control" id="reportType">
+            <option value="">Choose Report Type</option>
+          </select>
+            </div>
+            <div class="form-group">
+                <label for="targetAudience">Target Audience <i>(optional)</i></label>
+                <select type="text" class="form-control" id="targetAudience">
+              <option value="">Choose Report Type</option>
+            </select>
+            </div>
+            <div class="form-group">
+                <label for="reqStarted">Requested On</label>
+                <input type="date" class="form-control" id="reqStarted">
+            </div>
+            <div class="form-group">
+                <label for="targetCompletionDate">Target Completion Date</label>
+                <input type="date" class="form-control" id="targetCompletionDate">
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        <div class="col-md-12 reportBox">
+            <div class="form-group">
+                <label for="assigneeName">Assigned To</label>
+                <input type="text" class="form-control" id="assigneeName" placeholder="Enter Assignee's Name/Email Address here.">
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea class="form-control" id="description" placeholder="Enter report description here.">
+                </textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 text-right btnGroup">
+            <button type="button" class="btn btn-default">Cancel</button>
+            <button type="button" class="btn btn-primary">Save Report</button>
+        </div>
+
+</form>

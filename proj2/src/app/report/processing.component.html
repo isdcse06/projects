@@ -1,0 +1,87 @@
+<form>
+    <div class="col-md-6">
+        <div class="col-md-12 reportBox">
+            <h4>Power BI</h4>
+            <div class="form-group">
+
+
+                <div class="input-group">
+                    <label>Upload Report (PBIX) File</label>
+                    <input type="text" class="form-control" #addUser (keyup.enter)='addTo(addUser.value)' placeholder="Enter Link to PBIX file">
+
+                    <span class="input-group-btn">
+                               <button class = "btn btn-default" type = "button" (click)='addTo(addUser.value)'>
+                                  Upload PBIX
+                               </button>
+                            </span>
+
+                </div>
+            </div>
+            <h4>Data Source Properties</h4>
+
+            <div class="form-group">
+                <label for="serverName">Server Name</label>
+                <input type="text" class="form-control" id="serverName" />
+            </div>
+            <div class="form-group">
+                <label for="dbName">Database Name</label>
+                <input type="text" class="form-control" id="dbName" />
+            </div>
+            <div class="form-group">
+                <label for="userName">User Name</label>
+                <input type="text" class="form-control" id="userName" />
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="col-md-12 reportBox">
+            <h4>Test User</h4>
+            <div class="form-group">
+
+                <div class="input-group">
+                    <label>Add Test User</label>
+                    <input type="text" class="form-control" #addUser (keyup.enter)='addTo(addUser.value)'>
+
+                    <span class="input-group-btn">
+                               <button class = "btn btn-default" type = "button" (click)='addTo(addUser.value)'>
+                                  Add
+                               </button>
+                            </span>
+
+                </div>
+            </div>
+            <h4>List of Users</h4>
+            <div class="userListBox clearfix">
+                <div class="list clearfix">
+                    <span class="uName">user1</span>
+                    <span class="close" (click)='removeTo(i)'>x</span>
+                </div>
+                <div class="list clearfix">
+                    <span class="uName">user2</span>
+                    <span class="close" (click)='removeTo(i)'>x</span>
+                </div>
+                <div class="list clearfix" *ngFor='let user of users, let i=index'>
+                    <span class="uName">{{user}}</span>
+                    <span class="close" (click)='removeTo(i)'>x</span>
+                </div>
+            </div>
+            <h4>Test ink</h4>
+            <button type="button" class="btn btn-default">generate dev test link</button>
+            <div class="panel">
+                <a href="javascript:;">
+                https://www.this.is/a/dev/test.link
+            </a>
+                <span> Here is your dev test link. Click to go to the Report Test Page.</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 text-right  btnGroup">
+        <button type="button" class="btn btn-default">Cancel</button>
+        <button type="button" class="btn btn-primary">Submit to Test</button>
+    </div>
+</form>

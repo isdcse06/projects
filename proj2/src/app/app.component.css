@@ -1,0 +1,54 @@
+body{
+    color:#f3f3f3;
+    
+}
+.main-content{
+    margin-top: 0;
+    min-height: auto;
+    padding: 0px;
+}
+.card{
+    border-radius: 0px;
+}
+.page-bar {
+    background-color: #fff;
+    position: relative;
+    padding: 0 20px;
+}
+.page-bar .page-breadcrumb {
+    display: inline-block;
+    float: left;
+    padding: 8px;
+    margin: 0;
+    list-style: none;
+}
+.page-bar .page-breadcrumb>li {
+    display: inline-block;
+}
+.page-bar .page-breadcrumb>a, .page-bar .page-breadcrumb>span {
+    font-family: 'Gotham-Book';
+    padding-right: 5px;    
+    color: #7d7d7d;
+    font-size: 16px;
+    text-shadow: none;
+}
+.page-bar .page-breadcrumb>a i{
+    color: #0ba2d8;
+    font-size: 10px;
+}
+.modal-content{
+    border-radius: 0px !important;
+    
+}
+footer{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #7d7d7d;
+    border-top: 0px;
+    margin: 20px;
+    
+}
+footer img{
+    padding-left: 10px;
+    vertical-align: bottom;
+}

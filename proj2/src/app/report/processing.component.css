@@ -1,0 +1,292 @@
+.reportBox{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 2px 0px 6px rgba(136, 156, 176, 0.1);
+    border: 1px solid #e1e1e1;
+    padding: 15px; 
+}
+.attachmentURL{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 64%;
+    overflow: hidden;
+    display: inline-block;
+    color: #00b5ff;
+    line-height: 15px;
+}
+.downloadBtn{
+    margin: 0px 0 0px;
+    display: inline-block;
+}
+.form-group label{
+    /* color: #626366; */
+    color:#636363;
+    font-family: 'Gotham-Bold';
+}
+.form-control, .form-group .form-control{
+    font-family: 'Gotham-Book';
+    width: 100%;
+    color: #6a6a6a;
+    font-weight: lighter;
+    border: 1px solid rgb(239, 240, 240);
+    background-image: none;
+    background-position: none;
+    padding: 0 5px;
+    transition: all 0.5s;
+}
+input.form-control, select.form-control, textarea.form-control{
+    background-color: #eeefef !important;
+}
+textarea.form-control{
+    height: 180px;
+    padding-top:10px !important; 
+}
+.form-control, .form-group .form-control:focus{
+    border-color: #038fd5;
+    background-color: #fff !important;
+}
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #939393;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #939393;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #939393;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #939393;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  
+  .input-group-btn .btn{
+      height: 36px;
+      bottom: -9px;
+      margin-bottom: 0;
+  }
+  .btn{
+    font-family: 'Gotham-Book';
+    padding: 8px 20px;
+    border-radius: 20px !important;
+    box-shadow: none;
+    height: 36px;
+    min-width: 150px;
+}
+.btn-primary{
+    will-change: auto;
+    background-color: #8dc63f !important;
+    box-shadow: inset 0 0 0 0 #8dc63f !important;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+}
+.btn-primary:hover{
+    box-shadow: inset 0 36px 0 0 #0d90d3 !important;
+     /*background-color: #0d90d3 !important;
+    box-shadow: none !important; */
+}
+.btn-default{
+    will-change: auto;
+    color: #8dc63f !important;
+    background-color: #fff !important;
+    border:1px solid #8dc63f !important;
+    box-shadow: inset 0 0 0 0 #8dc63f !important;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+    
+}
+.btn-default:hover{
+    box-shadow: inset 0 36px 0 0 #8dc63f !important;
+    color: #fff !important;
+}
+.userListBox .list:first-child{
+    margin-top: 25px;
+}
+input[type="text"], input[type="date"], input[type="password"], select{
+    font-family: 'Gotham-Book';
+    color: #333 !important;
+    width: 100%;
+    box-sizing: border-box !important;
+    padding: 0 15px !important;
+    background-color: #ebebeb !important;
+    border:1px solid #e1e1e1 !important;
+    border-radius: 10px !important;
+    background-image: none !important;
+    height: 36px !important;
+  }
+  textarea{
+    font-family: 'Gotham-Book';
+    color: #333 !important;
+    width: 100%;
+    box-sizing: border-box !important;
+    padding: 0 15px !important;
+    background-color: #ebebeb !important;
+    border:1px solid #e1e1e1 !important;
+    border-radius: 10px !important;
+    background-image: none !important;
+    height: 150px !important;
+  }
+.userListBox .list{
+    font-family: 'Gotham-Book';
+    padding: 10px;
+    /* background-color: #ccc;  */
+    margin: 8px 0px;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.userListBox .list .uName{
+    float: left
+}
+.userListBox .list .close{
+    float: right;
+    color:#6a6a6a;
+    font-weight: 100;
+    opacity: 1
+}
+.issueWrap{
+    height: 450px;
+    padding: 0 4px 0 1px;
+    margin-bottom: 19px;
+    overflow: auto;
+}
+.issueWrap::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.issueWrap::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.issueWrap::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,0.5);
+}
+.issueBox{
+    display: table;
+    padding: 5px;
+    margin: 8px 0;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+.issueBox:hover{
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+}
+.issueBox div.leftSde, .issueBox div.rightSde{
+    vertical-align: top;
+    display: table-cell;
+    padding: 5px;
+    position: relative;
+}
+.issueBox div.rightSde p{
+    margin-bottom: 0;
+}
+.tabOption .btn{
+    margin:19px 0;
+}
+
+.label-cbx {
+    user-select: none;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  .label-cbx input:checked + .checkbox {
+    border-color: #00c2ff;
+  }
+  .label-cbx input:checked + .checkbox svg path {
+    fill: #00c2ff;
+  }
+  .label-cbx input:checked + .checkbox svg polyline {
+    stroke-dashoffset: 0;
+  }
+  .label-cbx:hover .checkbox svg path {
+    stroke-dashoffset: 0;
+  }
+  .label-cbx .checkbox {
+    position: relative;
+    top: 4px;
+    float: left;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #bbbbbb;
+    border-radius: 0px;
+    margin-top: 0;
+  }
+  .label-cbx .checkbox svg {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
+  .label-cbx .checkbox svg path {
+    fill: none;
+    stroke: #00c2ff;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 71px;
+    stroke-dashoffset: 71px;
+    transition: all 0.6s ease;
+  }
+  .label-cbx .checkbox svg polyline {
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 18px;
+    stroke-dashoffset: 18px;
+    transition: all 0.3s ease;
+  }
+  .label-cbx > span {
+    pointer-events: none;
+    vertical-align: middle;
+  }
+  
+  .cntr {
+    /* position: absolute;
+    top: 45%;
+    left: 0; */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .invisible {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .panel{
+    font-family: 'Lato-Medium';
+      border:1px solid #ececec;
+      padding: 20px;
+  }
+  .panel a{
+      display: block;
+      color: #00b5ff;
+  }
+  .panel span{
+      font-size: 13px;
+  }
+  .btnGroup{
+    margin-top: 15px;
+}

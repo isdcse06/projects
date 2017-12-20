@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'Axiforma-ExtraBold';
+    src: url('../fonts/axiforma/Axiforma-ExtraBold.eot');
+    src: url('../fonts/axiforma/Axiforma-ExtraBold.woff2') format('woff2'),
+         url('../fonts/axiforma/Axiforma-ExtraBold.woff') format('woff'),
+         url('../fonts/axiforma/Axiforma-ExtraBold.ttf') format('truetype'),
+         url('../fonts/axiforma/Axiforma-ExtraBold.svg#Axiforma-ExtraBold') format('svg'),
+         url('../fonts/axiforma/Axiforma-ExtraBold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Axiforma-LightItalic';
+    src: url('../fonts/axiforma/Axiforma-LightItalic.eot');
+    src: url('../fonts/axiforma/Axiforma-LightItalic.woff2') format('woff2'),
+         url('../fonts/axiforma/Axiforma-LightItalic.woff') format('woff'),
+         url('../fonts/axiforma/Axiforma-LightItalic.ttf') format('truetype'),
+         url('../fonts/axiforma/Axiforma-LightItalic.svg#Axiforma-LightItalic') format('svg'),
+         url('../fonts/axiforma/Axiforma-LightItalic.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Lato-Medium';
+    src: url('../fonts/lato/Lato-Medium.eot');
+    src: url('../fonts/lato/Lato-Medium.woff2') format('woff2'),
+         url('../fonts/lato/Lato-Medium.woff') format('woff'),
+         url('../fonts/lato/Lato-Medium.ttf') format('truetype'),
+         url('../fonts/lato/Lato-Medium.svg#Lato-Medium') format('svg'),
+         url('../fonts/lato/Lato-Medium.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/gotham/Gotham-Bold.eot');
+    src: url('../fonts/gotham/Gotham-Bold.woff2') format('woff2'),
+         url('../fonts/gotham/Gotham-Bold.woff') format('woff'),
+         url('../fonts/gotham/Gotham-Bold.ttf') format('truetype'),
+         url('../fonts/gotham/Gotham-Bold.svg#Gotham-Bold') format('svg'),
+         url('../fonts/gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/gotham/Gotham-Book.eot');
+    src: url('../fonts/gotham/Gotham-Book.woff2') format('woff2'),
+         url('../fonts/gotham/Gotham-Book.woff') format('woff'),
+         url('../fonts/gotham/Gotham-Book.ttf') format('truetype'),
+         url('../fonts/gotham/Gotham-Book.svg#Gotham-Book') format('svg'),
+         url('../fonts/gotham/Gotham-Book.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

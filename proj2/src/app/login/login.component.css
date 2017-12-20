@@ -1,0 +1,101 @@
+body{
+    /* background-color: #000000; */
+    
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    
+}
+.backgroundImg{
+    background: url('../../assets/img/Background.png') no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+}
+.login-container{
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+    height: 100%;
+
+}
+.loginInnerContainer{
+    padding: 80px;
+}
+.loginLogo{
+    text-align: center;
+}
+.loginLogo h1{
+    font-size: 2em;
+    font-weight: 600;
+    margin:10px 0 60px;
+    color: #555555;
+}
+.form-group label{
+    color: #6a6a6a;
+}
+.forgotPwd{
+    color: #555555;
+}
+.forgotPwd:hover, .forgotPwd:focus{
+    color: #555555;
+}
+
+.form-control, .form-group .form-control{
+    width: 100%;
+    color: #6a6a6a;
+    font-weight: lighter;
+    border: 1px solid rgb(239, 240, 240);
+    background-image: none;
+    background-position: none;
+    padding: 0 5px;
+    transition: all 0.5s;
+}
+input.form-control{
+    background-color: #eeefef !important;
+}
+textarea.form-control{
+    height: 180px;
+    padding-top:10px !important; 
+}
+.form-control, .form-group .form-control:focus{
+    border-color: #038fd5;
+    background-color: #fff !important;
+}
+
+
+
+.form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #939393;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #939393;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #939393;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+  .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #939393;
+    font-family: "Helvetica Neue",Helvetica,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+  }
+.btn{
+    border-radius: 0px;
+}
+.btn-primary{
+    background-color: #f79421 !important;
+    box-shadow: none !important;
+}
+.btn-primary:hover{
+    background-color: #f79421 !important;
+    box-shadow: none;
+}

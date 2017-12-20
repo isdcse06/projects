@@ -1,0 +1,86 @@
+
+.navbar-brand>img{
+    height: 50px;
+}
+.appTitle{
+    font-family: Axiforma-ExtraBold;
+    display: inline-block;
+    font-size: 25px;
+    margin: 7px 12px 0;
+    padding: 0
+}
+.navbar-collapse.collapse{
+    float: right;
+    margin-top: 10px;
+}
+.navbar .navbar-brand{
+    padding: 1px 15px;
+    border-right:1px solid #fff;
+}
+.navbar .navbar-nav > li{
+    padding: 0px 15px;
+    border-right: 1px solid #fff;
+}
+.navbar .navbar-nav > li:last-child{
+    border-right: 0px;
+    padding-right: 0;
+}
+.navbar .navbar-nav > li > a{
+    padding: 0 5px;
+    border-radius: 0px; 
+    cursor: pointer; 
+    font: 14px 'Open Sans', sans-serif;
+    text-transform: capitalize;
+}
+.navbar .navbar-nav > li > a img{
+    /* width: 40px;*/
+    height: 20px; 
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: text-bottom;
+}
+.navbar .navbar-nav > li > a span{
+    margin-left: 5px;
+}
+.nav.menu{
+
+}
+.menu.navbar-nav > li > a{
+   
+}
+.menu.navbar-nav > li > a.active{
+    color: #478900;
+    border-bottom: 3px solid #478900;
+}
+.navbar .dropdown-menu li a:hover, .navbar .dropdown-menu li a:focus, .navbar .dropdown-menu li a:active, .navbar.navbar-default .dropdown-menu li a:hover, .navbar.navbar-default .dropdown-menu li a:focus, .navbar.navbar-default .dropdown-menu li a:active {
+    background-color: #f79421;
+    color: #FFFFFF;
+    box-shadow: 0 12px 20px -10px rgba(246, 152, 38,0.2), 0 4px 20px 0px rgba(0, 0, 0, 0.12), 0 7px 8px -5px rgba(246, 152, 38,0.2);
+}
+.navbar-absolute{
+    position: relative;
+    height: 105px;
+    margin-bottom: 0px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    background: #8dc63f; /* Old browsers */
+    background: -moz-linear-gradient(left, #8dc63f 0%, #008fd5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #8dc63f 0%,#008fd5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #8dc63f 0%,#008fd5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dc63f', endColorstr='#008fd5',GradientType=1 ); /* IE6-9 */
+}
+.logout{
+    font-family: 'Gotham-Book' !important;
+    width: 75px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    border:1px solid #fff;
+    border-radius: 20px !important;
+    position: relative;
+    top: -4px;
+    padding: 7px 15px !important;
+
+}

@@ -1,0 +1,205 @@
+.main-content {
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+.btn{
+    padding: 8px 20px;
+    border-radius: 0px;
+}
+.btn-primary{
+    background-color: #f79421 !important;
+    box-shadow: none;
+}
+.btn-primary:hover{
+    background-color: #f79421 !important;
+    box-shadow: none;
+}
+.btn-default{
+    will-change: auto;
+    color: #f79421 !important;
+    background-color: #fff !important;
+    border:1px solid #f79421 !important;
+    box-shadow: inset 0 0 0 0 #f79421;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+    
+}
+.btn-default:hover{
+    box-shadow: inset 0 36px 0 0 #f79421;
+    color: #fff !important;
+}
+
+.dispIB{
+    display: inline-block;
+}
+.reports, .issue{
+    position: absolute;
+    width: 50%;
+    top: -20px;
+    padding: 15px 15px;
+    background:rgb(255,255,255); 
+    z-index: 999;
+    transition: all 0.5s;
+}
+.issueList{
+    min-height:150px; 
+    max-height: 180px;
+    overflow-y: auto;
+}
+.reportList{
+    min-height:150px; 
+    max-height: 400px;
+    overflow-y: auto;
+}
+.issue{
+    right: 0;
+    text-align: left;
+}
+.reportList::-webkit-scrollbar-track, .issueList::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.reportList::-webkit-scrollbar,.issueList::-webkit-scrollbar 
+{
+	width: 5px;
+	background-color: #F5F5F5;
+}
+
+.reportList::-webkit-scrollbar-thumb, .issueList::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgba(0,0,0,0.5);
+}
+.issueBox{
+    display: table;
+    width: 100%;
+    padding: 5px 10px;
+    margin: 8px 0;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.issueBox h5{
+    margin-bottom: 2px;
+    font-size: 16px
+}
+.issueBox p{
+ margin-bottom: 2px;
+ font-size: 13px;
+}
+.issueBox div.leftSde, .issueBox div.rightSde{
+    vertical-align: top;
+    display: table-cell;
+    padding: 5px;
+    position: relative;
+}
+.label-cbx {
+    user-select: none;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  .label-cbx input:checked + .checkbox {
+    border-color: #038fd5;
+  }
+  .label-cbx input:checked + .checkbox svg path {
+    fill: #038fd5;
+  }
+  .label-cbx input:checked + .checkbox svg polyline {
+    stroke-dashoffset: 0;
+  }
+  .label-cbx:hover .checkbox svg path {
+    stroke-dashoffset: 0;
+  }
+  .label-cbx .checkbox {
+    position: relative;
+    top: 4px;
+    float: left;
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e0dfdf;
+    border-radius: 0px;
+    margin-top: 0;
+  }
+  .label-cbx .checkbox svg {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+  }
+  .label-cbx .checkbox svg path {
+    fill: none;
+    stroke: #038fd5;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 71px;
+    stroke-dashoffset: 71px;
+    transition: all 0.6s ease;
+  }
+  .label-cbx .checkbox svg polyline {
+    fill: none;
+    stroke: #FFF;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 18px;
+    stroke-dashoffset: 18px;
+    transition: all 0.3s ease;
+  }
+  .label-cbx > span {
+    pointer-events: none;
+    vertical-align: middle;
+  }
+  
+  .cntr {
+    /* position: absolute;
+    top: 45%;
+    left: 0; */
+    width: 100%;
+    text-align: center;
+  }
+  
+  .invisible {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  textarea{
+    height: 62px;
+    color: #6a6a6a;
+    font-weight: lighter;
+    border: 1px solid rgb(239, 240, 240);
+    background-color: #eeefef;
+    background-image: none;
+    background-position: none;
+    padding: 0 5px;
+    transition: all 0.5s;
+    resize: none;
+  }
+  textarea:focus{
+      background-color: #fff;
+    box-shadow:none; 
+    border-color: #038fd5;
+  }
+  .bugSpan{
+      padding: 6px 0;
+      /* background: #038fd5; */
+      font-size: 20px;
+      color: #807ab9;
+      height: 35px;
+      width: 35px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.5s;
+  }
+  .bugSpan:hover{
+      background-color: #807ab9;
+      color: #fff;
+  }

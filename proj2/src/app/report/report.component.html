@@ -1,0 +1,33 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="statusBar">
+          <ul class="wizardbar">
+            <li routerLink="initiated" routerLinkActive="current" class="wizardbar-item">
+                <span class="tileIcon"><img src="../../assets/img/initiated.png"></span>
+              <span class="processTitle"> Initiated</span>
+            </li>
+            <li routerLink="processing" routerLinkActive="current" class="wizardbar-item">
+                <span class="tileIcon"><img src="../../assets/img/processing.png"></span>
+                <span class="processTitle">Processing</span>
+            </li>
+            <li routerLink="testing" routerLinkActive="current" class="wizardbar-item">
+                <span class="tileIcon"><img src="../../assets/img/testing.png"></span>
+                <span class="processTitle">Testing</span>
+            </li>
+            <li routerLink="published" routerLinkActive="current" class="wizardbar-item">
+                <span class="tileIcon"><img src="../../assets/img/published.png"></span>
+                <span class="processTitle">Published</span>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+          <router-outlet></router-outlet>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

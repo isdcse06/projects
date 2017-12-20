@@ -1,0 +1,128 @@
+.fileUpload {
+    position: relative;
+    background-color: #104163 !important;
+    border-color: none;
+    cursor: pointer;
+    border-radius: 0px;
+    span {
+        cursor: pointer;
+    }
+    input[type="file"] {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        opacity: 0;
+        cursor: pointer;
+        right: 0;
+        top: 0;
+        height: 100%;
+        font-size: 24px;
+        width: 100%;
+        filter: alpha(opacity=1);
+        -moz-opacity: 0.01;
+        opacity: 0.01;
+    }
+}
+.Galleryalertmsg {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    font-size: 12px;
+}
+.fileListViewContainer {
+    margin: 15px 0 0 0;
+    height: 240px;
+    overflow-y: auto;
+    .previewlist {
+        padding: 0;
+        li {
+            list-style: none;
+            width: 20%;
+            float: left;
+            padding: 0 10px;
+            cursor: pointer;
+            .imagepreviewcontainer {
+                position: relative;
+                width: 100%;
+                padding-bottom: 100%;
+                margin: 0 0 20px 0;
+                -webkit-box-shadow: 0px 0px 5px 0px #cfcfcf;
+                -moz-box-shadow: 0px 0px 5px 0px #cfcfcf;
+                box-shadow: 0px 0px 5px 0px #cfcfcf;
+                background: #222222;
+                .previewImageBorder {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    border: 3px solid #222222;
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                }
+                .addideaimagedelete {
+                    position: absolute;
+                    right: 3px;
+                    top: 3px;
+                    background: rgba(18, 67, 100, 0.6);
+                    padding: 0 4px;
+                    .close {
+                        opacity: 1 !important;
+                    }
+                }
+                .filename {
+                    position: absolute;
+                    background: rgba(18, 67, 100, 0.6);
+                    display: block;
+                    width: 100%;
+                    color: #fff;
+                    padding: 10px;
+                    font-size: 15px;
+                    bottom: 0;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+.addideamodalfooter {
+    position: relative;
+    .defaultImageMsg {
+        float: left;
+    }
+    .Galleryalertmsg {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+        font-size: 12px;
+    }
+    button {
+        display: inline-block;
+        margin-bottom: 0;
+        font-weight: normal;
+        text-align: center;
+        vertical-align: middle;
+        touch-action: manipulation;
+        cursor: pointer;
+        border-radius: 0px;
+        background-color: #104163;
+        border: none;
+        white-space: nowrap;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #fff;
+    }
+}

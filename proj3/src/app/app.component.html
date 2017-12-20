@@ -1,0 +1,125 @@
+<div id="wrapper" [class.toggled]="!isClassVisible" (click)="onClickedOutside($event)">
+  <div class="topHeader">
+    <div class="logoContainer">
+      <a class="logoLink" [routerLink]="['accounts']" title="">
+         <img src="./SiteAssets/assets/images/logo-lantronix@2x.png" alt="logo" /> 
+        
+      </a>
+      <span class="glyphicon glyphicon-menu-hamburger toggleMenu visible-xs" (click)="$event.stopPropagation();isClassVisible = !isClassVisible;" aria-hidden="true" title=""></span>
+    </div>
+    <div class="titleSection">
+      <h1><span>App Title</span></h1>
+    </div>
+    <div class="userContainer" (click)="$event.stopPropagation();showLogout = !showLogout">
+      <div class="userNameConatiner">
+        <span class="userName" title="">login user</span>
+        <span class="glyphicon glyphicon-menu-down" aria-hidden="true">
+            <div class="topSubmenu" *ngIf="showLogout">
+              <a class="topSubmenuUser" >email</a>
+              <a href="www.google.com">logout</a>
+            </div>
+        </span>
+      </div>
+      <div class="userImage"  title="Image title">
+        <img src="./SiteAssets/assets/images/user.png" alt="userimage" />
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- #sidebar-wrapper -->
+  <div id="sidebar-wrapper" (click)="$event.preventDefault();">
+    <ul class="sidebar-nav">
+      <li class="hidden-xs desktopTogglebtn">
+         <span class="glyphicon glyphicon-chevron-left toggleMenu hidden-xs" aria-hidden="true" (click)="$event.stopPropagation();isClassVisible = !isClassVisible;" title=""></span>
+          <span class="glyphicon glyphicon-menu-hamburger toggleMenu hidden-xs" aria-hidden="true" (click)="$event.stopPropagation();isClassVisible = !isClassVisible;" title=""></span>
+      </li>
+      <li class="visible-xs">
+        <a [routerLink]="['accounts']">
+                  <!-- <img src="../SiteAssets/assets/images/Axaltalogo.png" alt="logo" /> -->
+                  Logo
+                </a>
+                <span class="closeMenu" (click)="$event.stopPropagation();isClassVisible = !isClassVisible;"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></span>
+      </li>
+      <li>
+        <a [routerLink]="['accounts']" routerLinkActive="active" title="" (click)="$event.preventDefault();">
+                  <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                  <span class="menuValue">Home</span>
+                </a>
+      </li>
+      <li>
+        <a [routerLink]="['summary']" routerLinkActive="active" title="" (click)="$event.preventDefault();">
+                  <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                  <span class="menuValue">Dashboard</span>
+                </a>
+      </li>
+       <li>
+        <a [routerLink]="['form']" routerLinkActive="active" title="" (click)="$event.preventDefault();">
+                  <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                  <span class="menuValue">PO Form</span>
+                </a>
+      </li>
+     <!-- <li class="settingMenu" (click)="$event.preventDefault();$event.stopPropagation();showMenu = !showMenu">
+        <a title="">
+                  <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+                  <span class="menuValue">settings menu</span>
+
+                   <div class="subMenuContainer" [class.subMenuOpen]="showMenu">
+                    <ul class="subMenu">
+                      <li>
+                      <a title="">
+                        <span class="menuValue">accounts sub menu</span>
+                      </a>
+                      </li>
+                      <li>
+                      <a title="">
+                        <span class="menuValue">accounts sub menu</span>
+                      </a>
+                      </li>
+                      <li>
+                      <a title="">
+                        <span class="menuValue">accounts sub menu</span>
+                      </a>
+                      </li>
+                      <li>
+                      <a title="">
+                        <span class="menuValue">accounts sub menu</span>
+                      </a>
+                      </li>
+                    </ul>
+                  </div>  
+
+        </a>
+               
+      </li> -->
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+
+  <!-- #page-content-wrapper -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <!-- <div class="breadCrumb">
+            <ul>
+              <li><span class="glyphicon glyphicon-home" aria-hidden="true"></span>breadCrumbTitle</li>
+            </ul>
+          </div> -->
+          
+          <div class="innerContainer">
+            <h2>Purchase Order Requistion</h2>
+            <div class="innerContainerContent">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /#page-content-wrapper -->
+
+  <div class="footer"><!--footer-->
+  <P class="copyright">2017 &copy; Company name<p>
+  </div><!--/footer-->
+</div>
+<!-- /#wrapper -->

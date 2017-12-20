@@ -1,0 +1,12 @@
+$icon-font-path: '~bootstrap-sass/assets/fonts/bootstrap/';
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "color.scss";
+ body {
+    overflow-x: hidden;
+    background: $bodybg;
+    font-size:16px;
+    img{
+            max-width:100%;
+            max-height:100%;
+        }
+ }

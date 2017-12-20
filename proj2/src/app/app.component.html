@@ -1,0 +1,35 @@
+<div class="wrapper wrapper-full-page">
+    <div class="main-panel">
+        <app-navbar *ngIf="!IsLogin"></app-navbar>
+        <div  *ngIf="!IsLogin" class="main-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="page-bar col-md-12">
+                        <!-- <breadcrumb #parent>
+                            <nav class="page-breadcrumb">
+                              <template ngFor let-route [ngForOf]="parent.breadcrumbs">
+                                  <span><img src="../../assets/img/dashboardIcon.png"></span>
+                                  <a class="breadcrumb-item" [routerLink]="[route.url]">Dashboard</a>
+                                 <a *ngIf="!route.terminal" class="breadcrumb-item" href="" [routerLink]="[route.url]">{{ route.displayName }} <i class="fa fa-circle"></i></a>
+                                <span *ngIf="route.terminal"  class="breadcrumb-item active">{{ route.displayName }}</span>
+                              </template>
+                            </nav>
+                          </breadcrumb> -->
+                          <nav class="page-breadcrumb">
+                                <span><img src="../../assets/img/dashboardIcon.png"></span>
+                                <a class="breadcrumb-item" routerLink="/dashboard">Dashboard</a>
+                          </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+        <footer class="clearfix">
+            <div class="col-md-12 text-right">
+                All Rights Reserved By OrthoSynetics Inc. Orthosynetics.com &copy; 2017
+                <img src="../../assets/img/footerlogo.png">
+                </div>        
+        </footer>
+    </div>
+    
+</div>

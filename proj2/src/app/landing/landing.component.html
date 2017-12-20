@@ -1,0 +1,108 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+                <div class="row mrg30-T">
+                    <div class="col-md-12">
+                        <div class="col-md-3">
+                            <div class="tile clearfix">
+                                <div class="col-md-5">
+                                    <div class="tileIcon tileBgGreen"><img src="../../assets/img/initiated.png"></div>
+                                </div>
+                                <div class="col-md-7 tileTxt text-center">
+                                    Initiated Items <br/> <span>8</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="tile clearfix">
+                                <div class="col-md-5">
+                                    <div class="tileIcon tileBgGray"><img src="../../assets/img/processing.png"></div>
+                                </div>
+                                <div class="col-md-7 tileTxt text-center">
+                                    Developed Items <br/> <span>20</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="tile clearfix">
+                                <div class="col-md-5">
+                                    <div class="tileIcon tileBgOrange"><img src="../../assets/img/testing.png"></div>
+                                </div>
+                                <div class="col-md-7 tileTxt text-center">
+                                    Tested Items <br/> <span>4</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="tile clearfix">
+                                <div class="col-md-5">
+                                    <div class="tileIcon tileBgPurple"><img src="../../assets/img/published.png"></div>
+                                </div>
+                                <div class="col-md-7 tileTxt text-center">
+                                    Published Items <br/> <span>10</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mrg30-T">
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <div class="col-md-8 pd0-LR">
+                                <input class="form-control" type="text" placeholder="Searching Anything Here.." />
+                                <button class="btn-search"><img src="../../assets/img/searchIcon.png"></button>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <button class="btn btn-primary" title="Create Report">Create Report</button>
+                        </div>
+                    </div>
+                </div>
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-content table-responsive">
+                        <table class="table" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage">
+                            <thead>
+                                <tr>
+                                    <th>Report Name</th>
+                                    <th>Report Type</th>
+                                    <th>Report Status</th>
+                                    <th>Last Updated Date</th>
+                                    <th>View Detail</th>
+                                    <th>Report Link</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let detail of mf.data">
+                                    <td>{{detail.name}}</td>
+                                    <td>{{detail.type}}</td>
+                                    <td>{{detail.status}}</td>
+                                    <td>{{detail.date}}</td>
+                                    <td><a href="javascript:;" class="text-default">{{detail.view}}</a></td>
+                                    <td><a href="javascript:;" class="text-default">{{detail.report}}</a></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="5">
+                                        <mfBootstrapPaginator [rowsOnPageSet]=""></mfBootstrapPaginator>
+                                    </td>
+                                    
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
